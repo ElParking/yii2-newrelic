@@ -77,7 +77,7 @@ class Newrelic extends Component implements BootstrapInterface
                 $this->agent->setAppname($this->name, $this->licence);
             } else {
                 $this->enabled = false;
-                \Yii::$app->getLog()->getLogger()->log('Newrelic extension is not loaded', \yii\log\Logger::LEVEL_ERROR);
+                //\Yii::$app->getLog()->getLogger()->log('Newrelic extension is not loaded', \yii\log\Logger::LEVEL_ERROR);
             }
         }
     }
